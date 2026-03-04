@@ -1,0 +1,34 @@
+@media (max-width: 800px) {
+    :root
+{
+    --columns: 2;
+    --gap: 3rem;
+}
+.sub-div-container
+{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.bg-light-blue
+{
+    padding: 6% 0;
+}
+}
+@media (max-width: 600px) {
+    :root
+{
+    --columns: 1;
+    --gap: 3rem;
+}
+.bg-light-blue
+{
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+.column-3
+{
+    max-width: calc(100% / var(--columns));
+    flex: 1 0 calc((100% / var(--columns)) - var(--gap)); 
+}
+}
